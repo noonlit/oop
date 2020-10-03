@@ -1,0 +1,3 @@
+{"movie":{"title":"Corpse Bride","year":2005,"price":10,"isRunning":true,"id":1},"customer":{"cardNumber":1234567},"dateTime":{"date":{"year":2020,"month":4,"day":11},"time":{"hour":2,"minute":54,"second":35,"nano":161606700}},"id":1}
+{"movie":{"title":"Corpse Bride","year":2005,"price":10,"isRunning":true,"id":1},"customer":{"cardNumber":1224567},"dateTime":{"date":{"year":2020,"month":4,"day":11},"time":{"hour":3,"minute":54,"second":35,"nano":161606700}},"id":2}
+{"movie":{"title":"Corpse Bride","year":2005,"price":10,"isRunning":true,"id":1},"customer":{"cardNumber":1244567},"dateTime":{"date":{"year":2020,"month":4,"day":11},"time":{"hour":4,"minute":54,"second":35,"nano":161606700}},"id":3}

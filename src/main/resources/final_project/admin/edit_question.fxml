@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox fx:id="form" alignment="center" spacing="15">
+        <Label>
+            <font>
+                <Font size="18" />
+            </font>
+            <text>Edit Question</text>
+        </Label>
+        <TextField fx:id="text" promptText="Question" />
+        <TextArea fx:id="expectedAnswer" promptText="Expected Answer" wrapText="true" />
+        <TextField fx:id="hint" promptText="Hint" />
+        <Button fx:id="submit" text="Submit" />
+        <Text fx:id="message" />
+        <padding>
+            <Insets bottom="40" left="40" right="40" top="40" />
+        </padding>
+    </VBox>
+</VBox>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<GridPane alignment="BASELINE_CENTER" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinalProject.Controller.Admin.DashboardController">
+    <HBox>
+        <children>
+            <VBox alignment="center" spacing="15">
+                <Label fx:id="greeting">
+                    <font>
+                        <Font size="20" />
+                    </font>
+                    Welcome!
+                </Label>
+                <Button onAction="#showQuizListing" style="-fx-pref-width: 120;" text="Show Quizzes" />
+                <Button onAction="#showQuestionListing" style="-fx-pref-width: 120;" text="Show Questions" />
+                <Button onAction="#showUserListing" style="-fx-pref-width: 120;" text="Show Users" />
+                <Button onAction="#showCandidateResults" style="-fx-pref-width: 120;" text="Show Quiz Results" />
+                <Button fx:id="logout" onAction="#logout" style="-fx-pref-width: 120;" text="Logout" />
+                <padding>
+                    <Insets bottom="40" left="40" right="40" top="40" />
+                </padding>
+            </VBox>
+            <VBox alignment="center" layoutX="10.0" layoutY="10.0" spacing="15">
+                <padding>
+                    <Insets bottom="40" left="40" right="40" top="40" />
+                </padding>
+                <Pane fx:id="view">
+                    <children>
+                        <fx:include source="quiz_listing.fxml" />
+                    </children>
+                </Pane>
+            </VBox>
+        </children>
+    </HBox>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+
+</GridPane>

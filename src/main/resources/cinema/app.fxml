@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="BASELINE_CENTER" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.UserInterface.AppCinema">
+   <HBox prefHeight="275.0" prefWidth="512.0">
+      <children>
+          <VBox alignment="center" spacing="15">
+              <Label>
+                  <text>Welcome!</text>
+                  <font>
+                      <Font size="20" />
+                  </font>
+              </Label>
+              <Button onAction="#handleShowNewMovieForm" text="Add Movie" />
+              <Button onAction="#handleShowMovies" text="List Movies" />
+              <padding>
+                  <Insets bottom="40" left="40" right="40" top="40" />
+              </padding>
+          </VBox>
+          <VBox alignment="center" layoutX="10.0" layoutY="10.0" spacing="15">
+              <padding>
+                  <Insets bottom="40" left="40" right="40" top="40"/>
+              </padding>
+              <Pane fx:id="display"/>
+          </VBox>
+      </children>
+   </HBox>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>

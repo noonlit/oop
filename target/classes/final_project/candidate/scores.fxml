@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinalProject.Controller.Candidate.QuizScoresController">
+    <Label>
+        <font>
+            <Font size="18" />
+        </font>
+        <text>Quiz results</text>
+    </Label>
+    <TableView fx:id="listing" maxWidth="380.0" minWidth="380.0">
+        <columns>
+            <TableColumn fx:id="id" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="50.0" text="ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="name" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="158.0" text="Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="categoryLabel" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="120.0" text="Category">
+                <cellValueFactory>
+                    <PropertyValueFactory property="categoryLabel" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="score" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="50.0" text="Score">
+                <cellValueFactory>
+                    <PropertyValueFactory property="score" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</VBox>
